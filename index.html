@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA-MP Developments</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.cdnfonts.com/css/pricedown" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: "Beastie";
+           src: url("./fonts/BeastieSignature.ttf") format("truetype");
+        }
+        .font-pricedown {
+            font-family: 'Pricedown Bl', sans-serif;
+        }
+        .font-beastie {
+            font-family: "Beastie", cursive;
+        }
+        .font-sans {
+            font-family:  "Arial", "Helvetica Neue", Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="relative bg-[url(images/bg.png)] bg-cover bg-center bg-no-repeat min-h-screen">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#050B14] pointer-events-none"></div>
+       <div class="bg-[#050B14]/60 backdrop-blur-sm h-16 sm:h-20 md:h-25 border border-b-[#0A1220] relative">
+            <h1 class="font-pricedown text-blue-900 text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-5 sm:mt-6 md:mt-8 ml-4 sm:ml-6 md:ml-8">SA-MP DEVELOPMENTS</h1>
+        </div>
+        <div class="relative mt-14 sm:mt-20 md:mt-24 lg:mt-30 px-4 sm:px-8 md:px-12 lg:px-0">
+            <div id="member-badge" class="bg-white/5 border border-blue-950 rounded-3xl px-5 py-2 sm:px-8 sm:py-3 inline-block lg:ml-13 mt-3 sm:mt-6 md:mt-8 hidden">
+                <span id="discord-members" class="font-sans text-white text-xs sm:text-sm"></span>
+            </div>
+            <div class="font-['Montserrat'] text-4xl sm:text-6xl md:text-7xl lg:text-8xl mt-3 sm:mt-4 lg:ml-13 leading-tight">
+                <span class="text-white">SA-MP</span><br>
+                <span class="text-blue-900">Developments</span>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 lg:ml-13">
+                <a href="#about" class="bg-blue-900 flex items-center justify-center gap-2 w-fit font-sans font-semibold text-white text-xs p-3.5 sm:p-4 rounded-md transition delay-150 duration-300 ease-in-out hover:bg-blue-600 hover:scale-105">
+                    GET STARTED
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+                <a href="https://discord.gg/9FJx5RSv6B" class="bg-blue-900 flex items-center justify-center gap-2 w-fit font-sans font-semibold text-white text-xs p-3.5 sm:p-4 rounded-md transition delay-150 duration-300 ease-in-out hover:bg-blue-600 hover:scale-105">
+                        JOIN DISCORD
+                    <i class="fa-brands fa-discord text-base"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="bg-[#050B14] min-h-screen pt-10 sm:pt-14 md:pt-16 lg:pt-20 pb-16 sm:pb-20">
+        <div id="about">
+            <h1 class="font-['Montserrat'] text-white text-xl sm:text-2xl md:text-3xl ml-4 sm:ml-8 md:ml-14 lg:ml-20 mb-6 sm:mb-10 md:mb-16">WHAT IS SAMP <br> DEVELOPMENTS?</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 px-4 sm:px-8 md:px-14 lg:px-20 font-sans">
+                <div class="md:border-r border-blue-950 md:pr-8 lg:pr-10 pb-6 sm:pb-8 md:pb-0 border-b md:border-b-0">
+                    <div class="flex justify-between items-center text-gray-500 text-xs tracking-widest mb-3 sm:mb-4">
+                        <span>01</span>
+                    </div>
+                    <h2 class="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">FREE RESOURCES</h2>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                        Access free scripts, filterscripts, gamemodes, and tools to help you build your own SA-MP server.
+                    </p>
+                </div>
+                <div class="md:border-r border-blue-950 md:px-8 lg:px-10 pb-6 sm:pb-8 md:pb-0 border-b md:border-b-0">
+                    <div class="flex justify-between items-center text-gray-500 text-xs tracking-widest mb-3 sm:mb-4">
+                        <span>02</span>
+                    </div>
+                    <h2 class="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">DEVELOPER SUPPORT</h2>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                        Join our Discord for active support, tutorials, and direct help from experienced developers.
+                    </p>
+                </div>
+                <div class="md:pl-8 lg:pl-10">
+                    <div class="flex justify-between items-center text-gray-500 text-xs tracking-widest mb-3 sm:mb-4">
+                        <span>03</span>
+                    </div>
+                    <h2 class="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">DISCORD BOT</h2>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                        We have an AI-powered bot in our Discord server that generates Pawn and open.mp code on demand - just ask, and get ready-to-use snippets instantly.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h2 class="font-['Montserrat'] text-white text-xl sm:text-2xl md:text-3xl ml-4 sm:ml-8 md:ml-14 lg:ml-20 mt-16 sm:mt-28 md:mt-44 lg:mt-60 mb-4">WHAT WE'RE BUILDING</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 font-sans px-4 sm:px-8 md:px-14 lg:px-20 mt-6 sm:mt-10 md:mt-16 lg:mt-30">
+            <div class="md:border-r border-blue-950 md:pr-8 lg:pr-16 pb-6 sm:pb-8 md:pb-0 border-b md:border-b-0">
+                <div class="flex items-center text-gray-500 text-xs tracking-widest mb-3 sm:mb-4">
+                    <span>01</span>
+                    <span class="ml-4">IN DEVELOPMENT</span>
+                </div>
+                <h2 class="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">PAWN STUDIO - SAMP/OPEN MP COMPILER FOR ANDROID</h2>
+                <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                    Pawn Studio - A lightweight development environment for SA-MP and open.mp Pawn developers. Built by SAMP Development – Hooumin Administrator.
+                </p>
+            </div>
+            <div>
+                <div class="flex items-center text-gray-500 text-xs tracking-widest mb-3 sm:mb-4">
+                    <span>02</span>
+                    <span class="ml-4">RELEASED</span>
+                </div>
+                <h2 class="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">SPY LUNCHER FOR OPEN.MP/SAMP SERVERS</h2>
+                <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                    A modern and lightweight launcher for SA-MP and open.mp, featuring a server browser, live server status, player count, ping monitoring, one-click launch, and Discord Rich Presence (RPC).
+                </p>
+                <a href="https://spynixx-launcher-website.vercel.app/" class="bg-blue-900 flex items-center gap-2 w-fit font-sans font-semibold text-white text-xs mt-5 sm:mt-6 p-3.5 sm:p-4 rounded-md transition delay-150 duration-300 ease-in-out hover:bg-blue-600 hover:scale-105">
+                    WEBSITE
+                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                </a>
+            </div>
+        </div>
+        <div id="planning">
+            <h2 class="font-['Montserrat'] text-white text-xl sm:text-2xl md:text-3xl ml-4 sm:ml-8 md:ml-14 lg:ml-20 mt-16 sm:mt-28 md:mt-44 lg:mt-60 mb-4">FUTURE PROJECT PLANS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 font-sans px-4 sm:px-8 md:px-14 lg:px-20 mt-6 sm:mt-10 md:mt-16 lg:mt-30">
+                <div>
+                    <div class="flex items-center text-gray-500 text-xs tracking-widest mb-3 sm:mb-4">
+                        <span>01</span>
+                        <span class="ml-4">SOON</span>
+                    </div>
+                    <h2 class="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">SAMP MOBILE LUNCHER</h2>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                        Launch SA-MP and open.mp servers straight from your phone — fast, clean, and built for mobile from the ground up.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h2 class="font-['Montserrat'] text-white text-xl sm:text-2xl md:text-3xl ml-4 sm:ml-8 md:ml-14 lg:ml-20 mt-16 sm:mt-28 md:mt-44 lg:mt-60 mb-4">PARTNERS</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 font-sans px-4 sm:px-8 md:px-14 lg:px-20 mt-6 sm:mt-10 md:mt-16 lg:mt-30">
+            <div class="md:border-r border-blue-950 md:pr-8 lg:pr-16 flex flex-col h-full pb-6 sm:pb-8 md:pb-0 border-b md:border-b-0">
+                <div class="flex items-center text-gray-500 text-xs tracking-widest mb-3 sm:mb-4">
+                    <span>01</span>
+                </div>
+                <h2 class="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">GAMBITSS HOSTING</h2>
+                <p class="text-gray-400 text-sm sm:text-base leading-relaxed flex-grow">
+                    Fast, Reliable & Affordable Game Hosting - Powerful servers, smooth performance, and reliable uptime. Start your server today!
+                </p>
+                <a href="https://discord.gg/9qwsNZRg4N" class="bg-blue-900 flex items-center gap-2 w-fit font-sans font-semibold text-white text-xs mt-5 sm:mt-6 p-3.5 sm:p-4 rounded-md transition delay-150 duration-300 ease-in-out hover:bg-blue-600 hover:scale-105">
+                    JOIN DISCORD
+                    <i class="fa-brands fa-discord text-base"></i>
+                </a>
+            </div>
+            <div class="flex flex-col h-full">
+                <div class="flex items-center text-gray-500 text-xs tracking-widest mb-3 sm:mb-4">
+                    <span>02</span>
+                </div>
+                <h2 class="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">SA MOBILE</h2>
+                <p class="text-gray-400 text-sm sm:text-base leading-relaxed flex-grow">
+                   Launch, manage, and enjoy your SA-MP experience on mobile with ease.
+                </p>
+                <a href="https://discord.gg/F9A7rBJnpnn" class="bg-blue-900 flex items-center gap-2 w-fit font-sans font-semibold text-white text-xs mt-5 sm:mt-6 p-3.5 sm:p-4 rounded-md transition delay-150 duration-300 ease-in-out hover:bg-blue-600 hover:scale-105">
+                    JOIN DISCORD
+                    <i class="fa-brands fa-discord text-base"></i>
+                </a>
+            </div>
+        </div>
+        <div id="team">
+            <h2 class="font-['Montserrat'] text-white text-xl sm:text-2xl md:text-3xl ml-4 sm:ml-8 md:ml-14 lg:ml-20 mt-16 sm:mt-28 md:mt-44 lg:mt-60 mb-4">TEAM</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-5 md:gap-6 px-4 sm:px-8 md:px-14 lg:px-20 mt-6 sm:mt-10 md:mt-16 lg:mt-30 font-sans">
+                <div class="border border-blue-950 rounded-xl py-5 sm:py-7 md:py-8 px-3 sm:px-4 text-center bg-white/[0.02] transition delay-150 duration-300 ease-in-out hover:border-blue-800 hover:bg-white/[0.04] hover:-translate-y-1">
+                    <h3 class="text-white text-sm sm:text-base md:text-lg font-bold">KYUU</h3>
+                </div>
+                <div class="border border-blue-950 rounded-xl py-5 sm:py-7 md:py-8 px-3 sm:px-4 text-center bg-white/[0.02] transition delay-150 duration-300 ease-in-out hover:border-blue-800 hover:bg-white/[0.04] hover:-translate-y-1">
+                    <h3 class="text-white text-sm sm:text-base md:text-lg font-bold">NIKZZ</h3>
+                </div>
+                <div class="border border-blue-950 rounded-xl py-5 sm:py-7 md:py-8 px-3 sm:px-4 text-center bg-white/[0.02] transition delay-150 duration-300 ease-in-out hover:border-blue-800 hover:bg-white/[0.04] hover:-translate-y-1">
+                    <h3 class="text-white text-sm sm:text-base md:text-lg font-bold">CHARLES</h3>
+                </div>
+                <div class="border border-blue-950 rounded-xl py-5 sm:py-7 md:py-8 px-3 sm:px-4 text-center bg-white/[0.02] transition delay-150 duration-300 ease-in-out hover:border-blue-800 hover:bg-white/[0.04] hover:-translate-y-1">
+                    <h3 class="text-white text-sm sm:text-base md:text-lg font-bold">XIORII</h3>
+                </div>
+                <div class="border border-blue-950 rounded-xl py-5 sm:py-7 md:py-8 px-3 sm:px-4 text-center bg-white/[0.02] transition delay-150 duration-300 ease-in-out hover:border-blue-800 hover:bg-white/[0.04] hover:-translate-y-1">
+                    <h3 class="text-white text-sm sm:text-base md:text-lg font-bold">JANZEN</h3>
+                </div>
+                <div class="border border-blue-950 rounded-xl py-5 sm:py-7 md:py-8 px-3 sm:px-4 text-center bg-white/[0.02] transition delay-150 duration-300 ease-in-out hover:border-blue-800 hover:bg-white/[0.04] hover:-translate-y-1">
+                    <h3 class="text-white text-sm sm:text-base md:text-lg font-bold">SHINDO</h3>
+                </div>
+                 <div class="border border-blue-950 rounded-xl py-5 sm:py-7 md:py-8 px-3 sm:px-4 text-center bg-white/[0.02] transition delay-150 duration-300 ease-in-out hover:border-blue-800 hover:bg-white/[0.04] hover:-translate-y-1">
+                    <h3 class="text-white text-sm sm:text-base md:text-lg font-bold">940</h3>
+                </div>
+                 <div class="border border-blue-950 rounded-xl py-5 sm:py-7 md:py-8 px-3 sm:px-4 text-center bg-white/[0.02] transition delay-150 duration-300 ease-in-out hover:border-blue-800 hover:bg-white/[0.04] hover:-translate-y-1">
+                    <h3 class="text-white text-sm sm:text-base md:text-lg font-bold">REIX</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="scroll-btn" aria-label="Scroll down" class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 z-50 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-blue-900 border border-blue-800 flex items-center justify-center shadow-lg transition delay-150 duration-300 ease-in-out hover:bg-blue-600 hover:scale-110">
+        <i id="scroll-icon" class="fa-solid fa-chevron-down text-white text-sm transition-transform duration-300"></i>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
